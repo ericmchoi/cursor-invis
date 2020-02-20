@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cursor Invis</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div id="game" class="game">
+      <canvas
+        id="game-canvas"
+        class="game-canvas"
+        width="640"
+        height="480"
+      ></canvas>
+      <div class="game-layer game-layer_clickthrough">
+        <div id="game-score" class="game-score">0</div>
+        <div class="timer">
+          <div id="timer-value" class="timer-value"></div>
+        </div>
+        <div id="game-countdown" class="game-layer game-countdown"></div>
+      </div>
+      <div id="game-start" class="game-layer game-start">
+        <div>
+          <h1 class="game-title">CURSOR INVIS</h1>
+          <p id="game-credits" class="game-credits"></p>
+          <button class="game-btn">Start</button>
+        </div>
+      </div>
+      <div id="game-over" class="game-layer game-over _hidden">
+        <div>
+          <p class="over-text">GAME OVER</p>
+          <p class="over-score">FINAL SCORE: <span id="final-score"></span></p>
+          <button class="game-btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
